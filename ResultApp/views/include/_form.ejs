@@ -1,0 +1,49 @@
+<form action="/api/results" method="POST" id="add_result">
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" name="rollno" placeholder="rollno">
+        <input type="hidden" name="id" value="">
+        <label for="rollno">Roll no.</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="name" class="form-control" name="name" placeholder="name">
+        <label for="name">Name</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="date" class="form-control" name="dob" placeholder="">
+        <label for="dob">Date of Birth</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="number" class="form-control" name="score" placeholder="0">
+        <label for="score">Score</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+ <!-- form handling -->
+ <!-- <form action="/api/results" method="POST" id="add_result">
+  <div class="new_result">
+      <div class="form-group">
+          <label for="rollno" class="text-light">Roll no.</label>
+          <input type="hidden" name="id" value="">
+          <input type="text" name="rollno" value="" placeholder="Roll no">
+      </div>
+      <div class="form-group">
+          <label for="name" class="text-light">Name</label>
+          <input type="text" name="name" value="" placeholder="Enter Name">
+      </div>
+      <div class="form-group">
+        <label for="dob" class="text-light">Date of Birth</label>
+        <input type="date" name="dob" value="" placeholder="">
+    </div>
+
+    <div class="form-group">
+      <label for="score" class="text-light">Name</label>
+      <input type="number" name="score" value="" placeholder="Enter Marks">
+  </div>
+
+      <div class="form-group">
+          <button type="submit" class="btn text-dark update">Save</button>
+      </div>
+
+  </div>
+</form> -->

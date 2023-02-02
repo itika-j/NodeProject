@@ -1,0 +1,70 @@
+<!-- include header-->
+<%-include('include/_header')%> 
+
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-right">
+            <div class="filter">
+                <a href="/">All students<i class="fa-solid fa-bars"></i></a>
+            </div>
+        </div>
+
+        <div class="form-title text-center">
+            <h2 class="text-dark">Edit Student</h2>
+        </div>
+        
+        <!-- include form -->
+        <form action="POST" id="update_result">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" name="rollno" value="<%=result.rollno%> ">
+            <input type="hidden" name="id" value="<%=result.id%>">
+            <label for="rollno">Roll no.</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="name" class="form-control" name="name" value="<%=result.rollno%>">
+            <label for="name">Name</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="date" class="form-control" name="dob" value="<%=result.dob%>">
+            <label for="dob">Date of Birth</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="number" class="form-control" name="score" value="<%=result.score%>">
+            <label for="score">Score</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form> 
+        <!-- <form method="POST" id="update_result">
+  <div class="new_result">
+      <div class="form-group">
+          <label for="rollno" class="text-light">Roll no.</label>
+          <input type="hidden" name="id" value="<%=result.id%>">
+          <input type="text" name="rollno" value="<%=result.rollno%>" placeholder="Roll no">
+      </div>
+      <div class="form-group">
+          <label for="name" class="text-light">Name</label>
+          <input type="text" name="name" value="<%=result.name%>" placeholder="Enter Name">
+      </div>
+      <div class="form-group">
+        <label for="dob" class="text-light">Date of Birth</label>
+        <input type="date" name="dob" value="<%=result.dob%>" placeholder="">
+    </div>
+
+    <div class="form-group">
+      <label for="score" class="text-light">Name</label>
+      <input type="number" name="score" value="<%=result.score%>" placeholder="Enter Marks">
+  </div>
+
+      <div class="form-group">
+          <button type="submit" class="btn text-dark update">Save</button>
+      </div>
+
+  </div>
+        </form> -->
+    </div>
+</main>
+
+<!--/Main-->
+
+<!-- include footer-->
+<%-include('include/_footer')%>

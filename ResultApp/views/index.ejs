@@ -1,0 +1,35 @@
+<!-- include header-->
+<%-include('include/_header')%> 
+
+<!--Main-->
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-right">
+            <a href="add-result" class="border-shadow">
+                <span class="text-geadient">Add Result<i class="fa-solid fa-user"></i></span>
+            </a>
+        </div>
+        <!--Form handeling-->
+        <form action="/" method="post">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Roll no.</th>
+                        <th>Name</th>
+                        <th>Date of Birth</th>
+                        <th>Score</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <%-include('include/_show')%> 
+                </tbody>
+            </table>
+        </form>
+    </div>
+</main>
+
+<!--/Main-->
+
+<!-- include footer-->
+<%-include('include/_footer')%>
